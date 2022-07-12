@@ -1,80 +1,43 @@
 ---
 layout: page
 title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+description: MOC - Measuring the Originality of Courseware in Online Education Systems. (ACMMM Oral paper)
+img: assets/img/10.jpg
+importance: 5
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+In online education systems, the courseware plays a pivotal role in helping educators present and impart knowledge to students. The originality of courseware heavily impacts the choice of educators, because the teaching content evolves and so does courseware.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/MOC_courseware.png" title="MOC_courseware" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    The illustration of a courseware, which is composed of visual and textual content and is continuously updated.
 </div>
+
+However, how to measure the originality of a courseware is a challenging task, due to the lack of labels and the difficulty of quantification. To this end, we contribute a similarity ranking-based unsupervised approach to measure the originality of a courseware.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/MOC_overview.png" title="MOC_overview" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    The graphical representation of our propose framework, which is composed of \emph{Deep Visual-text Embedding}, \emph{Variable-length Vectors Integration}, and \emph{Mutual Information Maximization}.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+ In particular, we first exploit a pre-trained deep visual-text embedding to obtain the representations of images and texts in a local manner. Next, inspired by the design of capsule neural network, a vector-based pooling network is proposed to learn multimodal representations of images and texts. Finally, we propose a Discriminator to optimize the model by maximizing the mutual information between local features and global features in an unsupervised manner.
+ 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/MOC_flowchart.png" title="MOC_flowchart" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The illustration of how to evaluate the framework.
 </div>
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+  To evaluate the performance of our proposed model, we further subtly collect a dataset for evaluating the originality of courseware by treating sequential versions of each courseware as ranking lists. Therefore, the learning-to-rank scheme can be utilized to evaluate the similarity-based ranking performance. Extensive experimental results have demonstrated the superiority of our proposed framework as compared to other state-of-the-art competitors.

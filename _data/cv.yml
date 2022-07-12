@@ -2,96 +2,88 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Jiawei Wang
     - name: Languages
-      value: English, German
+      value: English, Mandarin, Cantonese, Hokkien
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: Hunan University, Changsha, China
+      year: 2021 - now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Computer Science
+        # - Description 2.
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
+    - title: Master
+      institution: Guangdong University of Techonology, Guangzhou, China
+      year: 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Control Science and Engineering
+    - title: Undergraduate
+      institution: Guangdong University of Techonology, Guangzhou, China
+      year: 2017
+      description:
+        - Electrical Engineering and Automation
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: CVTE corporation 
+      institution: Data Mining (Technical Leader of Cognitive Reasoning Group)
+      year: 2019 - 2021
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+        - title: Applying the Structural Causal Model (SCM) and Potential Outcome Model (POM) to measure the effectiveness of students using an educational app based on the user behaviour data.
+          contents: The use of propensity score matching and other technologies has confirmed that students who utilize educational apps to answer questions online can effectively improve their academic performance, compared with students who normally answer questions offline.
+        - title: Solving Math Word Problems based on a memory-augmented generative solver.
+          contents: We propose a novel human-like analogical learning method in a recall and learn manner to automatically answer mathematical problems according to their textual descriptions. (EMNLP, NeurIPS)
+        - title: Measuring the Originality of Courseware in Online Education Systems. (ACMMM)
+          contents: Save more than one million manual audit costs per year. 
+        - title: Attending AI Meets Beauty Perfect Half Million Beauty Product Image Recognition Challenge. (ACMMM)
+          contents: Obtain 0.364021 mAP on the given dataset and win the bronze prize.
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/JaveyWang/Pyramid-Attention-Networks-pytorch">Pyramid-Attention-Networks-pytorch</a>
+      year: 2018
+      description: A Pytorch implementation of paper "Pyramid Attention Networks for Semantic Segmentation".
+    - title: <a href="https://github.com/JaveyWang/pytorch-capsule">pytorch-capsule</a>
+      year: 2017
+      description: A Pytorch implementation of Hinton's "Dynamic Routing Between Capsules".
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2021
+      items:
+        - <a href="https://mp.weixin.qq.com/s/2U0uGGlqcXNEKleK_lfE9g">China AI and Law Challenge - Debate and Understanding Track - First Prize</a>
+        - <a href="https://mp.weixin.qq.com/s/2U0uGGlqcXNEKleK_lfE9g">China AI and Law Challenge - Judicial Examination - Second Prize</a>
+    - year: 2019
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - <a href="https://challenge2020.perfectcorp.com/index.html">Bronze prize of the "AI Meets Beauty Perfect Half Million Beauty Product Image Recognition Challenge" of ACMMM2019</a>
+    - year: 2018
       items: 
-        - Max Planck Medal
+        - Winning Award in the Face Recognition Group of the International Industrial Design Competition of the 2018 <a href="http://gdstc.gd.gov.cn/zwgk_n/zwdt/content/post_2690752.html">Xing Shi Cup</a>
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: Representation Learning
       items:
-        - Description 1.
-        - Description 2.
+        - Multi-modal Representation Learning (CV+NLP)
+        - Graph Representation Learning
+    - title: Causal Inference
+      items: 
+        - Structural Causal Model
+        - Potential Outcome Model
+    - title: Neural Rendering (basic)
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Swimming, Basketball, Reading recent papers about AI.
